@@ -1,0 +1,61 @@
+{
+  "name": "basah-react",
+  "version": "1.1.0",
+  "description": "Basah Creative Tim",
+  "repository": "https://github.com/creativetimofficial/notus-react",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/data-grid": "^4.0.0-alpha.33",
+    "@material-ui/x-grid": "^4.0.0-alpha.33",
+    "@popperjs/core": "2.9.1",
+    "@tailwindcss/forms": "0.2.1",
+    "antd": "^4.16.9",
+    "autoprefixer": "10.2.5",
+    "chart.js": "2.9.4",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "postcss": "8.2.8",
+    "react": "^17.0.1",
+    "react-bootstrap-table2-paginator": "^2.1.2",
+    "react-bootstrap-table2-toolkit": "^2.1.3",
+    "react-dom": "^17.0.1",
+    "react-geocode": "^0.2.3",
+    "react-google-autocomplete": "^2.4.0",
+    "react-google-maps": "^9.4.5",
+    "react-redux": "^7.2.5",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.3",
+    "reactstrap": "^8.9.0",
+    "redux": "^4.1.1",
+    "tailwindcss": "2.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && gulp licenses",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "typescript": "4.2.3"
+  }
+}
