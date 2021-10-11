@@ -19,10 +19,7 @@ function createData(type, price) {
 }
 
 const rows = [
-  createData("Plastik", `${6000}`),
-  createData("Kertas", 1000),
-  createData("Alumunium", 6000),
-  createData("Tembaga Bersih", 36000),
+  createData("Belum ada kategori ditambahkan")
 //   createData(),
 ];
 
@@ -35,8 +32,8 @@ export default function BasicTable() {
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Jenis Sampah</TableCell>
-              <TableCell align="right">Harga/kg</TableCell>
+              <TableCell>Nama Kategori</TableCell>
+              <TableCell align="right">Qty Barang</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

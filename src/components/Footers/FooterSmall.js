@@ -20,7 +20,7 @@ export default function FooterSmall(props) {
                   href="#"
                   className="text-white hover:text-blueGray-300 text-sm font-semibold py-1"
                 >
-                 Basah Creative Tim
+                 SIMP
                 </a>
               </div>
             </div>
@@ -31,7 +31,7 @@ export default function FooterSmall(props) {
                     href="#"
                     className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
                   >
-                   Basah Creative Tim
+                    SIMP
                   </a>
                 </li>
                 <li>

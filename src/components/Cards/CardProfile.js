@@ -53,19 +53,19 @@ export default function CardProfile() {
         </div>
       </div>
       
-      <div border="light" className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-10">
+      {/* <div border="light" className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-10">
       <div>
         <h5 className="mb-4">Select Profile Photo</h5>
         <hr className="mt-2 border-b-1 border-blueGray-300" />
         <div className="d-xl-flex align-items-center">
           <div className="user-avatar xl-avatar">
-            {/* <Image fluid rounded src={photo} /> */}
+            <Image fluid rounded src={photo} />
           </div>
           <div className="file-field">
             <div className="d-flex justify-content-xl-center ms-xl-3">
               <div className="d-flex">
                 <span className="icon icon-md">
-                  {/* <FontAwesomeIcon icon={faPaperclip} className="me-3" /> */}
+                  <FontAwesomeIcon icon={faPaperclip} className="me-3" />
                   <i class="fas fa-paperclip fa-2x"></i>
                 </span>
                 <input type="file" />
@@ -78,7 +78,9 @@ export default function CardProfile() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
+
+    
     </>
   );
 }

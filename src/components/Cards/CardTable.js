@@ -14,16 +14,12 @@ const useStyles = makeStyles({
   },
 });
 
-function createData(name, role, notelp, address) {
-  return { name, role, notelp, address};
+function createData(id, uuid, nama, email, username, alamat, nohape, role) {
+  return { id, uuid, nama, email, username, alamat, nohape, role };
 }
 
 const rows = [
-  createData("Muamar", "Admin", "085156042841", "Bekasi"),
-  createData("Fadhilah", "Bendahara", "085698343494", "Lampung"),
-  createData("Bambang", "Pengurus 1", "085698343494", "Jakarta"),
-  createData("Ahmad", "Pengurus 2", "085698343494", "Semarang"),
-  createData("Arif", "Staff lain", "085698343494", "Medan"),
+  createData(1, "1633278334", "Super Administrator", "admin@simp.com", "admin", "Pondok Programmer, Kretek Bantul.", "082128796431", "admin"),
 ];
 
 export default function BasicTable() {
@@ -35,22 +31,30 @@ export default function BasicTable() {
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
+              <TableCell>id</TableCell>
+              <TableCell>uuid</TableCell>
               <TableCell>Nama</TableCell>
-              <TableCell align="center">Role</TableCell>
-              <TableCell align="right">No. Telp</TableCell>
-              <TableCell align="right">Alamat</TableCell>
-              {/* <TableCell align="right">Protein&nbsp;(g)</TableCell> */}
+              <TableCell align="left">Email</TableCell>
+              <TableCell align="left">Username</TableCell>
+              <TableCell align="left">Alamat</TableCell>
+              <TableCell align="left">no. Hp</TableCell>
+              <TableCell align="left">Role</TableCell>
+              {/* <TableCell align="left">Protein&nbsp;(g)</TableCell> */}
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row) => (
               <TableRow key={row.name}>
+                <TableCell align="left">{row.id}</TableCell>
+                <TableCell align="left">{row.uuid}</TableCell>
                 <TableCell component="th" scope="row">
-                  {row.name}
+                  {row.nama}
                 </TableCell>
-                <TableCell align="center">{row.role}</TableCell>
-                <TableCell align="right">{row.notelp}</TableCell>
-                <TableCell align="right">{row.address}</TableCell>
+                <TableCell align="left">{row.email}</TableCell>
+                <TableCell align="left">{row.username}</TableCell>
+                <TableCell align="left">{row.alamat}</TableCell>
+                <TableCell align="left">{row.nohape}</TableCell>
+                <TableCell align="left">{row.role}</TableCell>
                 {/* <TableCell align="right">{row.protein}</TableCell> */}
               </TableRow>
             ))}

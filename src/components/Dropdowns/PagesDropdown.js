@@ -27,7 +27,7 @@ const PagesDropdown = () => {
           dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}
       >
-        Basah Creative Tim
+        SIMP
       </a>
       <div
         ref={popoverDropdownRef}
@@ -65,7 +65,7 @@ const PagesDropdown = () => {
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Tables Staff
+          Data Staff
         </Link>
         <Link
           to="/admin/tables/users"
@@ -73,7 +73,7 @@ const PagesDropdown = () => {
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Table User
+          Data Users
         </Link>
 
         <Link
@@ -82,17 +82,17 @@ const PagesDropdown = () => {
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Jenis Sampah
+          Data Kategori
         </Link>
 
-        {/* <Link
-          to="/admin/maps"
+        <Link
+          to="/admin/"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Maps
-        </Link> */}
+          Stock Barang
+        </Link>
         <div className="h-0 mx-4 my-2 border border-solid border-blueGray-100" />
         <span
           className={

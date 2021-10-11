@@ -14,16 +14,12 @@ const useStyles = makeStyles({
   },
 });
 
-function createData(name, notelp, address, balance) {
-  return { name, notelp, address, balance};
+function createData(id, name, nohape, alamat) {
+  return { id, name, nohape, alamat};
 }
 
 const rows = [
-  createData("Muamar", "085156042841", "Bekasi", `Rp. ${1000000}`),
-  createData("Fadhilah", "085698343494", "Lampung", `Rp. ${1500000}`),
-  createData("Bambang", "085698343494", "Jakarta", `Rp. ${800000}`),
-  createData("Ahmad", "085698343494", "Semarang", `Rp. ${500000}`),
-  createData("Arif", "085698343494", "Medan", `Rp. ${100000}`   ),
+  createData(1, "Wandi Grosir", "082128796431", "Jl. Parang Tritis, Kretek Bantul"),
 ];
 
 export default function BasicTable() {
@@ -35,10 +31,10 @@ export default function BasicTable() {
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
+            <TableCell>id</TableCell>
               <TableCell>Nama</TableCell>
-              <TableCell align="right">No. Telp</TableCell>
-              <TableCell align="right">Alamat</TableCell>
-              <TableCell align="right">Saldo Tabungan</TableCell>
+              <TableCell align="left">No. Telp</TableCell>
+              <TableCell align="left">Alamat</TableCell>
               
               {/* <TableCell align="right">Protein&nbsp;(g)</TableCell> */}
             </TableRow>
@@ -46,12 +42,12 @@ export default function BasicTable() {
           <TableBody>
             {rows.map((row) => (
               <TableRow key={row.name}>
+                <TableCell align="left">{row.id}</TableCell>
                 <TableCell component="th" scope="row">
                   {row.name}
                 </TableCell>
-                <TableCell align="right">{row.notelp}</TableCell>
-                <TableCell align="right">{row.address}</TableCell>
-                <TableCell align="right">{row.balance}</TableCell>
+                <TableCell align="left">{row.nohape}</TableCell>
+                <TableCell align="left">{row.alamat}</TableCell>
 
                 {/* <TableCell align="right">{row.protein}</TableCell> */}
               </TableRow>
